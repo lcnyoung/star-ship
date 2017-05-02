@@ -1,0 +1,52 @@
+* { padding: 0; margin: 0; }
+
+html, body { height: 100%; background: url(../images/bg.jpg) no-repeat; background-size: cover; font-family: "Georgia"; }
+
+.cloud-s { position: fixed; top: -200px; left: 15%; z-index: 5; animation: cloud01 3s linear 0s infinite alternate; }
+
+.cloud-m { position: fixed; top: -100px; left: 40%; z-index: 5; animation: cloud02 3s linear 0s infinite alternate; }
+
+.cloud-l { position: fixed; top: -200px; left: 70%; z-index: 5; animation: cloud01 3s linear 0s infinite alternate; }
+
+.cloud-tran { position: fixed; top: 200px; left: 70%; z-index: 4; animation: cloud03 9s linear 0s infinite alternate; }
+
+.moon { position: fixed; top: 120px; left: 22%; transform: rotate(0); animation: moon 3s linear 0s infinite alternate; }
+
+.ship { position: fixed; bottom: 50px; left: 60%; z-index: 4; transform: rotate(0); animation: ship 3s linear 0s infinite alternate; }
+
+.wave-f { height: 200px; position: fixed; bottom: -100px; left: 0; z-index: 7; animation: wave01 3s linear 0s infinite alternate; }
+
+.wave-m { height: 400px; position: fixed; bottom: -200px; left: 0; z-index: 5; animation: wave03 3s linear 0s infinite alternate; }
+
+.wave-b { height: 600px; position: fixed; bottom: -380px; left: 0; z-index: 3; animation: wave02 3s linear 0s infinite alternate; }
+
+.fish-s { position: fixed; bottom: 0; left: 40%; z-index: 4; transform: rotate(0); animation: fish01 3s ease-out 1.5s infinite normal; }
+
+.fish-l { position: fixed; bottom: 0; left: 20%; z-index: 6; transform: rotate(0); animation: fish02 3s ease-out 0s infinite normal; }
+
+.motto { width: 600px; height: 50px; color: #fff; text-shadow: 3px 3px 3px #000; font-size: 20px; position: fixed; left: 60%; bottom: 100px; z-index: 10; }
+
+@keyframes cloud01 { from { top: -200px; }
+  to { top: -100px; } }
+@keyframes cloud02 { from { top: -100px; }
+  to { top: -200px; } }
+@keyframes cloud03 { from { left: 70%; }
+  to { left: -10%; } }
+@keyframes moon { from { transform: rotate(0); }
+  to { transform: rotate(-30deg); } }
+@keyframes wave01 { from { bottom: -100px; }
+  to { bottom: -50px; } }
+@keyframes wave02 { from { bottom: -380px; }
+  to { bottom: -330px; } }
+@keyframes wave03 { from { bottom: -200px; }
+  to { bottom: -240px; } }
+@keyframes ship { from { transform: rotate(0); }
+  to { transform: rotate(-20deg); } }
+@keyframes fish01 { 0% { bottom: 0; left: 40%; transform: rotate(0); }
+  50% { bottom: 300px; left: 20%; transform: rotate(-30deg); }
+  100% { bottom: -10px; left: -10%; transform: rotate(-60deg); } }
+@keyframes fish02 { 0% { bottom: 0; left: 20%; transform: rotate(0); }
+  50% { bottom: 100px; left: 10%; transform: rotate(-40deg); }
+  100% { bottom: -80px; left: 0; transform: rotate(-80deg); } }
+
+/*# sourceMappingURL=css.css.map */
